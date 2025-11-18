@@ -1,0 +1,61 @@
+/* Styles for the global search box to match modern card look */
+.buscador-wrapper {
+  min-width: 260px;
+  max-width: 520px;
+}
+.buscador-input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  padding: 6px 8px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+.buscador-icon {
+  color: #6b7280;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buscador-control {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 6px 8px !important;
+  border-radius: 999px;
+}
+.buscador-control::placeholder { color: #9ca3af; }
+
+@media (max-width: 768px) {
+  .buscador-wrapper { max-width: 320px; }
+  .navbar-links { display: none !important; }
+}
+
+.buscador-suggestions {
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(15,23,42,0.08);
+  margin-top: 8px;
+  border-radius: 10px;
+  width: 100%;
+  max-height: 320px;
+  overflow: auto;
+  z-index: 1200;
+  padding: 8px;
+}
+.suggestion-item {
+  display: flex;
+  gap: 0.5rem;
+  padding: 6px;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.suggestion-item:hover { background: #f8fafc; }
+.suggestion-thumb { width: 48px; height: 48px; object-fit: cover; border-radius: 6px; }
+.suggestion-meta { display:flex; flex-direction:column; gap:2px; }
+.suggestion-name { font-weight:600; font-size:0.95rem; }
+.suggestion-sub { color:#6b7280; font-size:0.85rem; }
+

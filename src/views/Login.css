@@ -1,0 +1,97 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/src/assets/portada.png') no-repeat center center;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.login-form-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+.login-form h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.error-alert {
+  background-color: rgba(220, 53, 69, 0.8);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  color: #eee;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #00aaff;
+}
+
+.form-control:focus + label,
+.form-control:not(:placeholder-shown) + label {
+  top: -0.75rem;
+  left: 1rem;
+  font-size: 0.85rem;
+  background-color: #1c2536; /* Match this with the blurred background */
+  padding: 0 0.5rem;
+}
+
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #00aaff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0088cc;
+  transform: translateY(-2px);
+}

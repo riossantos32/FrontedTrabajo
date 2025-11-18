@@ -1,0 +1,67 @@
+
+
+.color-navbar {
+  background: #1a2a6c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.color-texto-marca {
+  color: #66af66 !important;
+}
+.btns{
+  color: hsl(180, 88%, 23%);
+  width: 200px;
+  border-radius: 20px;
+}
+.titulo{
+  color: rgb(124, 70, 8);
+}
+.sub{
+  color: #b37707;
+}
+.margen-superior-main{
+  margin-top: 60px;
+}
+
+.eliminar{
+ background-color: #b21f1f;
+}
+
+.titulo-blanco .dropdown-toggle {
+  color: white !important;
+  font-weight: bold;
+}
+
+.titulo-negro .dropdown-toggle {
+  color: rgb(0, 0, 0) !important;
+  font-weight: bold;
+}
+
+
+
+/* Asegura que el contenedor principal ocupe toda la altura de la ventana */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Asegura que el contenido principal ocupe el espacio disponible */
+.content {
+  flex: 1 0 auto;
+}
+
+/* Asegura que el footer se mantenga en la parte inferior */
+.footer {
+  flex-shrink: 0;
+}
+
+.portada-imagen {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: auto;
+  border-radius: 0.5rem;
+}
