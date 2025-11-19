@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import LoginForm from "../components/login/LoginForm";
-import "../app.css";
+import "../App.css"; // Importar el CSS global
 import "../components/login/LoginForm.css"; // Importar el CSS para el fondo
 
 const Login = () => {
